@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background: url('./background.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+}
+
+nav h1 {
+    font-size: 24px;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+nav ul li a.explore {
+    background-color: #de1515;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.header-content p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.header-content button {
+    padding: 10px 20px;
+    background-color: #f70505;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.famous-places {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.famous-places h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.famous-places p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.places-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.place-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33.333% - 20px); /* Three cards in a row with space in between */
+    text-align: center;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.place-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.place-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.place-card button {
+    padding: 8px 15px;
+    background-color: #c41f1f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: #ffb3b3;
+}
+
+nav ul li a.explore:hover {
+    background-color: #794747;
+}
+
+.header-content button:hover {
+    background-color: #794747;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.place-card button:hover {
+    background-color: #794747;
+}
+
+@media (max-width: 768px) {
+    .places-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-card {
+        width: 80%;
+    }
+}
